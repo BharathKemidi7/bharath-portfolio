@@ -8,7 +8,7 @@
         scroll-behavior: smooth;
     }
     body{
-        background:#080808;
+        background: radial-gradient(circle at top left, #2b0040, #0a001a);
         color: #fff;
     }
     #header{
@@ -398,3 +398,36 @@
         margin-top:-40px;
         display: block;
     }
+.container {
+  text-align: center;
+}
+
+.title {
+  font-size: 3rem;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+  color: #cbb2ff;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(200, 150, 255, 0.4);
+  color: #fff;
+}
